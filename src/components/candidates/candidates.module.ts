@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
+
 import { SchemaName } from './../../shared/constants/schema-name';
 import { CandidateSchema } from './schemas/candidate.schema';
 import { CandidatesController } from './candidates.controller';

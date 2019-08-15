@@ -5,7 +5,7 @@ import { AppService } from './app.service';
 import { CandidatesModule } from './components/candidates/candidates.module';
 import { FilesModule } from './components/files/files.module';
 
-import env from './utils/env';
+import env from './configs/env';
 
 @Module({
   imports: [

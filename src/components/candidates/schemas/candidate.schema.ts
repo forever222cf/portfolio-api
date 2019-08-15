@@ -8,6 +8,6 @@ export const CandidateSchema = new Schema({
   contacts: [ContactSchema],
   avatar: Buffer
 }, {
-  colection: SchemaName.Candidate,
+  collection: SchemaName.Candidate,
   timestamps: true
 })

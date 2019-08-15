@@ -23,7 +23,7 @@ export class CandidatesService {
     return await this.candidateModel.findById(id).exec();
   }
 
-  async clean(): Promise<ICandidate[]> {
-    return await this.candidateModel.deleteMany().exec();
+  async clean(): Promise<any> {
+    return await this.candidateModel.deleteMany({}).exec();
   }
 }

@@ -1,4 +1,5 @@
 import { Schema } from 'mongoose';
+import { SchemaName } from './../../../shared/constants/schema-name';
 
 export const FileSchema = new Schema({
   thumbnail: Buffer,
@@ -10,4 +11,7 @@ export const FileSchema = new Schema({
   fileCategory: String,
   fileName: String,
   originalName: String
+}, {
+  collection: SchemaName.File,
+  timestamps: true
 })
